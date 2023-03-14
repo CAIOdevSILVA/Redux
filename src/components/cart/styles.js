@@ -20,6 +20,27 @@ export const CartContainer = styled.div`
   }
 `;
 
+export const TotalPrice = styled.div`
+  width: 100%;
+  margin-top: 20px;
+
+  p{
+    font-weight: bold;
+
+    span{
+      color: green;
+    }
+  }
+`
+
+export const VoidCart = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 export const CartEscapeArea = styled.div`
   width: 100%;
 `;
@@ -31,6 +52,9 @@ export const CartContent = styled.div`
   background-color: white;
   padding: 20px;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  
 
   @media (max-width: 768px) {
     min-width: 85%;
